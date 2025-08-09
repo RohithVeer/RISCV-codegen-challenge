@@ -2,19 +2,19 @@
 
 A cross-language code generation workflow: **YAML → Python → C header → C program → YAML**.
 
-## 🚀 Highlights
+##  Highlights
 - Parse structured YAML input (`input.yaml`) using Python
 - Auto-generate a C header (`data_gen.h`) with `#define` macros
 - Use a C program (`main.c`) to emit YAML based on the header
 - Complete round-trip transformation with verified output
 
-## 📂 Key Files
+## Key Files
 - `generate_header.py` – Python script to convert YAML → C header
 - `data_gen.h` – Auto-generated constants
 - `main.c` – Emits YAML using header constants
 - `output.yaml` – Final generated YAML
 
-## 🛠 Usage
+##  Usage
 ```bash
 # Install dependencies
 sudo apt update
@@ -28,7 +28,7 @@ python3 generate_header.py input.yaml > data_gen.h
 gcc main.c -o emit_yaml
 ./emit_yaml
 
-📚 Learnings
+ Learnings
 
     Cross-language data transformation
 
@@ -36,7 +36,7 @@ gcc main.c -o emit_yaml
 
     File I/O and macro handling in C
 
-📄 Read the full documentation here
+ Read the full documentation here
 
 
 ---
